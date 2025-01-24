@@ -1,8 +1,8 @@
 - name: play 1
   hosts: mysql
   become: yes
-  vars:
-    mysql_root_password: ExpenseApp@1
+  # vars:
+  #   mysql_root_password: ExpenseApp@1
   tasks: 
   - name: install pymsql and crypto library
     ansible.builtin.pip:
